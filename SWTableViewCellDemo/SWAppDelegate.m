@@ -7,6 +7,7 @@
 //
 
 #import "SWAppDelegate.h"
+#import "SWTableViewController.h"
 
 @implementation SWAppDelegate
 
@@ -15,6 +16,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    SWTableViewController *tableVC = [[SWTableViewController alloc] init];
+    self.window.rootViewController = tableVC;
     [self.window makeKeyAndVisible];
     return YES;
 }
